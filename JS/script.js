@@ -5,22 +5,23 @@ const btnPLay = document.querySelector(".btn-play");
 btnPLay.addEventListener("click", function () {
   const difficoltà = document.querySelector('[name="difficoltà"]');
 
-   if (difficoltà.value === "Facile") {
-     generaGrigliaCelle(10);
-   } else if (difficoltà.value === "Medio") {
-     generaGrigliaCelle(9);
-   } else if (difficoltà.value === "Difficile") {
-     generaGrigliaCelle(7);
-   }
-
-
+  //   CONDIZIONE PER ASSEGNARE IL VALORE DELLE CELLE IN BASE ALLA DIFFICOLTÀ
+  if (difficoltà.value === "Facile") {
+    generaGrigliaCelle(10);
+  } else if (difficoltà.value === "Medio") {
+    generaGrigliaCelle(9);
+  } else if (difficoltà.value === "Difficile") {
+    generaGrigliaCelle(7);
+  }
 });
 
 /**
  *
  * @param {number} numCelleRiga Numero di celle da generare ogni riga
+ *
  */
 
+// FUNZIONE CHE GENERA LE CELLE
 function generaGrigliaCelle(numCelleRiga) {
   // variabile che contiene il valore delle celle da generare
   const totalCells = numCelleRiga * numCelleRiga;
