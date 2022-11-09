@@ -1,0 +1,31 @@
+.bg{
+    background-color: hwb(148 10% 40%);
+}
+
+button:active{
+    background-color: yellowgreen;
+}
+
+
+.cell{
+    display:flex;
+    border: 1px solid black;
+    
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    aspect-ratio: 1/1;
+
+
+    
+}
+
+.container-cells{
+    
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.bg-celeste{
+    background-color: #00bfff;
+}
