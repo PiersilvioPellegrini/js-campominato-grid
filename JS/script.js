@@ -5,6 +5,7 @@ const btnPLay = document.querySelector('.btn-play');
 btnPLay.addEventListener('click', function() {
     // richimao funzione
     generaGrigliaCelle(10);
+    
 });
 
 /**
